@@ -3,9 +3,9 @@ class Post
   
   @@all = [ ]
   
-  def initialize(title = @title, author = nil)
+  def initialize(title = @title)
     @title = title 
-    @author = author
+    @@all << self
   end
   
   def author_name(author = @author)
@@ -15,5 +15,9 @@ class Post
     else 
       author.name
     end
+  end
+  
+  def self.all 
+    @@all
   end
 end
