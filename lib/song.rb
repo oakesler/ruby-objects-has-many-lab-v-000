@@ -8,9 +8,9 @@ class Song
     @@all << self
   end
   
-  def all
-    @@all
-  end
+  #def all
+    #@@all
+  #end
   
   def name(name = @name)
     @name = name
