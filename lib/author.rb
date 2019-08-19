@@ -29,6 +29,13 @@ class Author
     @@all
   end
   
-  def post_count
+  def self.post_count
+    @@count
+  end
+end
+
+
+  def self.song_count
+    @@count
   end
 end
